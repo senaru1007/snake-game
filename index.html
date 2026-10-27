@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+    <title>スネークゲーム</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>スネークゲーム</h1>
+    <p>スコア:<span id="score">0</span></p>
+    <canvas id="gameCanvas"
+    width="400"
+    height="400"></canvas>
+    <div id="controles">
+        <button onclick="changeDirection('up')">↑</button>
+        <div>
+            <button onclick="changeDirection('left')">←</button>
+            <button onclick="changeDirection('down')">↓</button>
+            <button onclick="changeDirection('right')">→</button>
+        </div>
+    </div>
+<p>矢印キーで蛇を操作しよう</p>
+<script src="script.js"></script>
+<button onclick="restartGame()">もう一度遊ぶ</button>
+</body></html>

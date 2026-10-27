@@ -1,0 +1,28 @@
+body{text-align: center;background-color: #222;color: white;
+font-family: sans-serif;}
+h1{color: lightgreen;}
+canvas{background-color: black;border: 3px solid lightgreen;}
+p{font-size: 24px;}
+/*スマホ画面への対応*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 10;
+    text-align: center;
+}
+#controls{
+margin-top: 20px;
+}
+#controls button{
+    width: 65px;
+    height: 55px;
+    font-size: 25;
+    margin: 3;
+    cursor: pointer;
+}
+#controls div{
+    display: flex;
+    justify-content: center;
+}
