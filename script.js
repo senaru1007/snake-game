@@ -17,6 +17,8 @@ let food={
 };
 //スコア
 let score=0;
+let highScore=localStorage.getItem("highScore")||0;
+document.getElementById("highScore").textContent=highScore;
 //ゲームの状態
 let gameover=false;
 //キーボード操作
@@ -71,6 +73,11 @@ function drawSnake(){
     if(head.x===food.x&& head.y===food.y){
         score=score+10;
         document.getElementById("score").textContent=score;
+        if(score>highScore){
+            highScore=score;
+            localStorage.setItem("highScore",highScore);
+            document.getElementById("highScore").textContent=highScore;
+        }
         createFood();
     }else{
         snake.pop();
